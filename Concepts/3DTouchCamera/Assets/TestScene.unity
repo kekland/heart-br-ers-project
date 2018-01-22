@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 687683800}
   - component: {fileID: 687683799}
   - component: {fileID: 687683804}
+  - component: {fileID: 687683805}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -311,6 +312,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225574dd241ecb643b6c62580d8966df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pivotObject: {fileID: 741619428}
+  outlineMaterial: {fileID: 2100000, guid: fb95c21260261754eab9baafa94539b2, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 6feb7d16717dd214a9429c9148a0822b, type: 2}
+--- !u!114 &687683805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687683798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bd2a34898a69f448a781da2fa641ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Post_Outline: {fileID: 4800000, guid: 4d95f1bc97163eb41aac3f0658b3bba4, type: 3}
+  DrawSimple: {fileID: 4800000, guid: a14c68883c0bfa0439847f80029fe46e, type: 3}
 --- !u!1 &741619428
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +339,7 @@ GameObject:
   - component: {fileID: 741619431}
   - component: {fileID: 741619430}
   - component: {fileID: 741619429}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +360,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6feb7d16717dd214a9429c9148a0822b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
