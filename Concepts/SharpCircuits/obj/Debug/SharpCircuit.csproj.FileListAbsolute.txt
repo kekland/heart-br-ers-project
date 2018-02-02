@@ -1,0 +1,9 @@
+C:\Users\kkerz\source\repos\SharpCircuits\obj\Debug\SharpCircuit.csprojResolveAssemblyReference.cache
+C:\Users\kkerz\source\repos\SharpCircuits\obj\Debug\SharpCircuit.csproj.CoreCompileInputs.cache
+C:\Users\kkerz\source\repos\SharpCircuits\bin\Debug\SharpCircuit.exe.config
+C:\Users\kkerz\source\repos\SharpCircuits\bin\Debug\SharpCircuit.exe
+C:\Users\kkerz\source\repos\SharpCircuits\bin\Debug\SharpCircuit.pdb
+C:\Users\kkerz\source\repos\SharpCircuits\bin\Debug\ServiceStack.Text.dll
+C:\Users\kkerz\source\repos\SharpCircuits\bin\Debug\ServiceStack.Text.xml
+C:\Users\kkerz\source\repos\SharpCircuits\obj\Debug\SharpCircuit.exe
+C:\Users\kkerz\source\repos\SharpCircuits\obj\Debug\SharpCircuit.pdb
