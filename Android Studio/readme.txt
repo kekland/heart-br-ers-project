@@ -1,1 +1,0 @@
-Android Studio project will be here

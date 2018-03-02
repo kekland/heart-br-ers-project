@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 using System;
 using UnityEngine.EventSystems;
 
@@ -30,7 +30,7 @@ public class robotConstructor : MonoBehaviour , IPointerClickHandler{
 		case "shaftIm":
 			currentSelectedPrefab = 1;
 			ChangeSelectedPrefab(false);
-			break; 
+			break;
 		case "PlatformIm":
 			currentSelectedPrefab = 2;
 			ChangeSelectedPrefab(false);
@@ -39,7 +39,7 @@ public class robotConstructor : MonoBehaviour , IPointerClickHandler{
 		case "ClowIm":
 			currentSelectedPrefab = 3;
 			ChangeSelectedPrefab(false);
-			break; 
+			break;
 		case "iftIm":
 			currentSelectedPrefab = 2;
 			ChangeSelectedPrefab(false);
@@ -67,7 +67,7 @@ public class robotConstructor : MonoBehaviour , IPointerClickHandler{
 		//ChangeSelectedPrefab(true);
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		RaycastHit hit;
@@ -102,9 +102,6 @@ public class robotConstructor : MonoBehaviour , IPointerClickHandler{
 	}
 
 	void ChangeSelectedPrefab(bool destroy) {
-		if(destroy) {
-
-		}
 		selectedPrefab = null;
 		selectedPrefab = Instantiate(Prefabs[currentSelectedPrefab]);
 		selectedPrefab.GetComponent<Rigidbody>().detectCollisions = false;

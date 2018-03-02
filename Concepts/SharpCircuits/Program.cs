@@ -16,24 +16,16 @@ namespace SharpCircuit {
 		}
 
 		static void Main(string[] args) {
+            Circuit sim = new Circuit();
 
-			Circuit sim = new Circuit();
-            
-			var volt0 = sim.Create<VoltageInput>(Voltage.WaveType.DC);
-			var res0 = sim.Create<Resistor>();
-			var ground0 = sim.Create<Ground>();
+            var input = sim.Create<VoltageInput>(Voltage.WaveType.DC);
+            var res = sim.Create<Resistor>();
+            var gnd = sim.Create<Ground>();
 
-            sim.Connect(volt0.leadPos, res0.leadIn);
-			sim.Connect(res0.leadOut, ground0.leadIn);
+            sim.Connect(input.leadPos, res.leadIn);
+            sim.Connect(res.leadOut, gnd.leadIn);
 
-			for(int x = 1; x <= 100; x++) {
-				sim.doTick();
-				// Ohm's Law
-				Debug.Log(res0.getVoltageDelta(), res0.resistance * res0.getCurrent()); // V = I x R
-				Debug.Log(res0.getCurrent(), res0.getVoltageDelta() / res0.resistance); // I = V / R
-				Debug.Log(res0.resistance, res0.getVoltageDelta() / res0.getCurrent()); // R = V / I
-			}
-
+            sim.doTick();
 			Console.WriteLine("program complete");
 			Console.ReadLine();
 		}
