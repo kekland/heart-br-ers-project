@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment selectedFragment = null;
-
             switch (item.getItemId()) {
                 case R.id.navigation_robots:
                     selectedFragment = new RobotsFragment();
@@ -36,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Fragment firstFragment = new RobotsFragment();
+        Fragment firstFragment = new TutorialsFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 firstFragment).commit();
 
