@@ -88,8 +88,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="24sp"
                 android:layout_height="24sp"
-                android:layout_weight="1"
-                android:src=""/>
+                android:layout_weight="1"/>
 
             <TextView
                 android:id="@+id/textView6"
