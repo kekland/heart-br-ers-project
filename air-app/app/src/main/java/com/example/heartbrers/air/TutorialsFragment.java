@@ -62,9 +62,10 @@ public class TutorialsFragment extends Fragment {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getContext(), layoutManager.getOrientation());
         recyclerView.addItemDecoration(dividerItemDecoration);
 
-
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference reference = database.getReference("videos");
+
+
 
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -89,4 +90,5 @@ public class TutorialsFragment extends Fragment {
         });
         return view;
     }
+
 }

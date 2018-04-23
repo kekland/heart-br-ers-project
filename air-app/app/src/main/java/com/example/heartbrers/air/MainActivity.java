@@ -8,10 +8,10 @@ import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
-
-import uk.co.samuelwall.materialtaptargetprompt.MaterialTapTargetPrompt;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -22,12 +22,18 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_robots:
                     selectedFragment = new RobotsFragment();
+                    TextView toolbar_text = (TextView)findViewById(R.id.toolbar_text);
+                    toolbar_text.setText("My robots");
                     break;
                 case R.id.navigation_tutorials:
                     selectedFragment = new TutorialsFragment();
+                    toolbar_text = (TextView) findViewById(R.id.toolbar_text);
+                    toolbar_text.setText("My Tutorials");
                     break;
                 case R.id.navigation_profile:
                     selectedFragment = new ProfileFragment();
+                    toolbar_text = (TextView) findViewById(R.id.toolbar_text);
+                    toolbar_text.setText("My Profile");
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -50,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-    }
 
+    }
 }
