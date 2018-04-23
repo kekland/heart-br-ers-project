@@ -5,47 +5,32 @@ package com.example.heartbrers.air;
  */
 
 public class RoboInfo {
-    private int iconId, delete, copy;
-    private String r_name;
-    private String r_identifier;
+    private int robotIconId;
+    private String robotName;
+    private String robotId;
+    private int robotIndex;
 
-    public RoboInfo(int iconId, String r_name, String r_identifier) {
-        this.iconId = iconId;
-        this.r_name= r_name;
-        this.r_identifier = r_identifier;
+    public RoboInfo(int robotIconId, String robotName, String robotId, int robotIndex) {
+        this.robotIconId = robotIconId;
+        this.robotName = robotName;
+        this.robotId = robotId;
+        this.robotIndex = robotIndex;
     }
 
-
-    public int getIconId() {
-        return iconId;
+    public int getRobotIconId() {
+        return robotIconId;
     }
 
-    public void setIconId(int iconId) {
-        this.iconId = iconId;
+    public String getRobotName() {
+        return robotName;
     }
 
-    public String getTitle() {
-        return r_name;
+    public String getRobotId() {
+        return robotId;
     }
 
-    public void setR_name(String title) {
-        this.r_name = title;
-    }
-
-    public int getDelete() {
-        return delete;
-    }
-
-    public void setDelete(int delete) {
-        this.delete = delete;
-    }
-
-    public int getCopy() {
-        return copy;
-    }
-
-    public void setCopy(int copy) {
-        this.copy = copy;
+    public int getRobotIndex() {
+        return robotIndex;
     }
 }
 
