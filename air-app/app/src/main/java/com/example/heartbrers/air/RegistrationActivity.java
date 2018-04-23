@@ -44,6 +44,7 @@ public class RegistrationActivity extends AppCompatActivity {
         final EditText passwordEdit = findViewById(R.id.edit_text_register_password);
         final EditText passwordConfirmEdit = findViewById(R.id.edit_text_register_password_confirm);
         final EditText regionEdit = findViewById(R.id.edit_text_register_region);
+
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
