@@ -3,6 +3,7 @@ package com.example.heartbrers.air;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -33,14 +34,20 @@ public class RobotsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_robots, container, false);
         recyclerView= (RecyclerView)view.findViewById(R.id.recycler_view_robots);
+        final View root = view.findViewById(R.id.robotsRoot);
 
         List<RoboInfo> info = new ArrayList<>();
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 
         for(int i = 0; i < prefs.getInt("robotCount", 0); i++) {
-            info.add(new RoboInfo(R.drawable.industrial_robot, prefs.getString("robotName_" + i, "null"), prefs.getString("robotID_" + i, "null")));
+            String robotId = prefs.getString("robotIds." + i, "null");
+            boolean robotEnabled = prefs.getBoolean(robotId + ".enabled", false);
+            if(robotEnabled) {
+                String robotName = prefs.getString(robotId + ".name", "null");
+                info.add(new RoboInfo(R.drawable.industrial_robot, robotName, robotId, i));
+            }
         }
-        adapter = new RobotAdapter(info);
+        adapter = new RobotAdapter(info, getContext());
 
 
         recyclerView.setHasFixedSize(false);
@@ -65,11 +72,22 @@ public class RobotsFragment extends Fragment {
                                 EditText idEdit = dialogView.findViewById(R.id.robot_id_edittext);
 
                                 if(nameEdit.getText().length() != 0 && idEdit.getText().length() != 0) {
-                                    SharedPreferences sprefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-                                    sprefs.edit().putString("robotName_" + adapter.getItemCount(), nameEdit.getText().toString())
-                                    .putString("robotID_" + adapter.getItemCount(), idEdit.getText().toString()).apply();
-                                    adapter.addItem(new RoboInfo(R.drawable.industrial_robot, nameEdit.getText().toString(), idEdit.getText().toString()));
-                                    sprefs.edit().putInt("robotCount", adapter.getItemCount()).apply();
+                                    String robotName = nameEdit.getText().toString();
+                                    String robotId = idEdit.getText().toString();
+                                    if(!prefs.getBoolean(robotId + ".enabled", false)) {
+                                        int thisIndex = prefs.getInt("robotCount", 0);
+                                        prefs.edit().putString(robotId + ".name", robotName)
+                                                .putBoolean(robotId + ".enabled", true)
+                                                .putString("robotIds." + thisIndex, robotId)
+                                                .putInt("robotCount", thisIndex + 1).apply();
+                                        adapter.addItem(new RoboInfo(R.drawable.industrial_robot, robotName, robotId, thisIndex));
+                                    }
+                                    else {
+                                        Snackbar.make(root, "Robot's identifier must be unique", Snackbar.LENGTH_SHORT).show();
+                                    }
+                                }
+                                else {
+                                    Snackbar.make(root, "Robot's name or identifier cannot be empty", Snackbar.LENGTH_SHORT).show();
                                 }
                             }
                         })

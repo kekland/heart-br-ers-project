@@ -1,6 +1,9 @@
 package com.example.heartbrers.air;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,9 +20,11 @@ import java.util.List;
 
 public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHolder> {
     private List<RoboInfo> arrayList;
+    private Context context;
 
-    public RobotAdapter(List<RoboInfo> arrayList){
+    public RobotAdapter(List<RoboInfo> arrayList, Context ctx){
         this.arrayList=arrayList;
+        this.context = ctx;
     }
 
 
@@ -31,10 +36,21 @@ public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHold
     }
 
     @Override
-    public void onBindViewHolder(RoboViewHolder holder, int position) {
+    public void onBindViewHolder(RoboViewHolder holder, final int position) {
         final RoboInfo roboInfo = arrayList.get(position);
-        holder.robot_icon.setBackgroundResource(roboInfo.getIconId());
-        holder.r_name.setText(roboInfo.getTitle());
+
+        holder.robotIcon.setBackgroundResource(roboInfo.getRobotIconId());
+        holder.robotName.setText(roboInfo.getRobotName());
+
+        holder.deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+                prefs.edit().putBoolean(roboInfo.getRobotId() + ".enabled", false).apply();
+                arrayList.remove(position);
+                notifyItemRemoved(position);
+            }
+        });
 
         holder.card.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,30 +70,18 @@ public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHold
     public class RoboViewHolder extends RecyclerView.ViewHolder {
 
         CardView card;
-        View robot_icon, delete_icon, copy_icon, wrench_icon;
-        TextView r_name;
-        int position;
-        RoboInfo currentObject;
+        View robotIcon, deleteButton, editButton;
+        TextView robotName;
+
+
         public RoboViewHolder (View view){
             super(view);
-            robot_icon= (View)view.findViewById(R.id.robot_icon);
-            r_name= (TextView)view.findViewById(R.id.robot_name);
-
-            card = (CardView)view.findViewById(R.id.layout_robot_card);
+            robotIcon= view.findViewById(R.id.robot_icon);
+            robotName = view.findViewById(R.id.robot_name);
+            deleteButton = view.findViewById(R.id.listitem_robot_delete);
+            editButton = view.findViewById(R.id.listitem_robot_edit);
+            card = view.findViewById(R.id.layout_robot_card);
         }
-
-        /*public void onClick(View view){
-            switch (view.getId()){
-                case R.id.delete_icon:
-                    removeItem(position);
-                    break;
-                case R.id.copy_icon:
-                    addItem(position, currentObject);
-                    break;
-            }
-
-        }*/
-
     }
 
     public void removeItem(int position) {
