@@ -18,6 +18,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -44,11 +46,15 @@ public class RobotsFragment extends Fragment {
             boolean robotEnabled = prefs.getBoolean(robotId + ".enabled", false);
             if(robotEnabled) {
                 String robotName = prefs.getString(robotId + ".name", "null");
-                info.add(new RoboInfo(R.drawable.industrial_robot, robotName, robotId, i));
+                long timestamp = prefs.getLong(robotId + ".time", 0);
+                RoboInfo data = new RoboInfo(R.drawable.industrial_robot, robotName, robotId, i);
+                data.setRobotTimestamp(timestamp);
+                info.add(data);
+
             }
         }
         adapter = new RobotAdapter(info, getContext());
-
+        adapter.Sort();
 
         recyclerView.setHasFixedSize(false);
         layoutManager=new LinearLayoutManager(getContext());
@@ -79,8 +85,16 @@ public class RobotsFragment extends Fragment {
                                         prefs.edit().putString(robotId + ".name", robotName)
                                                 .putBoolean(robotId + ".enabled", true)
                                                 .putString("robotIds." + thisIndex, robotId)
+                                                .putLong(robotId + ".time", Calendar.getInstance().getTimeInMillis())
                                                 .putInt("robotCount", thisIndex + 1).apply();
-                                        adapter.addItem(new RoboInfo(R.drawable.industrial_robot, robotName, robotId, thisIndex));
+
+
+                                        long timestamp = prefs.getLong(robotId + ".time", 0);
+
+                                        RoboInfo data = new RoboInfo(R.drawable.industrial_robot, robotName, robotId, i);
+                                        data.setRobotTimestamp(timestamp);
+
+                                        adapter.addItem(data);
                                     }
                                     else {
                                         Snackbar.make(root, "Robot's identifier must be unique", Snackbar.LENGTH_SHORT).show();
