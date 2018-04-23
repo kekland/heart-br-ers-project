@@ -9,6 +9,15 @@ public class RoboInfo {
     private String robotName;
     private String robotId;
     private int robotIndex;
+    private long robotTimestamp;
+
+    public long getRobotTimestamp() {
+        return robotTimestamp;
+    }
+
+    public void setRobotTimestamp(long robotTimestamp) {
+        this.robotTimestamp = robotTimestamp;
+    }
 
     public RoboInfo(int robotIconId, String robotName, String robotId, int robotIndex) {
         this.robotIconId = robotIconId;

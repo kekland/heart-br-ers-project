@@ -11,12 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 /**
  * Created by nrgz on 11.04.2018.
  */
+
 
 public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHolder> {
     private List<RoboInfo> arrayList;
@@ -36,19 +42,24 @@ public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHold
     }
 
     @Override
-    public void onBindViewHolder(RoboViewHolder holder, final int position) {
+    public void onBindViewHolder(final RoboViewHolder holder, int position) {
         final RoboInfo roboInfo = arrayList.get(position);
 
         holder.robotIcon.setBackgroundResource(roboInfo.getRobotIconId());
         holder.robotName.setText(roboInfo.getRobotName());
+
+        Date date = new java.util.Date(roboInfo.getRobotTimestamp());
+        SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd.MM.yyyy");
+
+        holder.robotTime.setText(sdf.format(date));
 
         holder.deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
                 prefs.edit().putBoolean(roboInfo.getRobotId() + ".enabled", false).apply();
-                arrayList.remove(position);
-                notifyItemRemoved(position);
+                arrayList.remove(holder.getAdapterPosition());
+                notifyItemRemoved(holder.getAdapterPosition());
             }
         });
 
@@ -56,6 +67,11 @@ public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHold
             @Override
             public void onClick(View view) {
                 //Open Unity Project
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+                long timestamp = Calendar.getInstance().getTimeInMillis();
+                prefs.edit().putLong(roboInfo.getRobotId() + ".time", timestamp).apply();
+                arrayList.get(holder.getAdapterPosition()).setRobotTimestamp(timestamp);
+                Sort();
             }
         });
     }
@@ -66,13 +82,34 @@ public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHold
     }
 
 
+    public void Sort() {
+        Collections.sort(arrayList, new Comparator<RoboInfo>() {
+            @Override
+            public int compare(RoboInfo r1, RoboInfo r2) {
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+                long r1time = prefs.getLong(r1.getRobotId() + ".time", 0);
+                long r2time = prefs.getLong(r2.getRobotId() + ".time", 0);
+                if(r1time > r2time) {
+                    return -1;
+                }
+                else if(r1time < r2time) {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            }
+        });
+
+        notifyDataSetChanged();
+    }
 
     public class RoboViewHolder extends RecyclerView.ViewHolder {
 
         CardView card;
         View robotIcon, deleteButton, editButton;
         TextView robotName;
-
+        TextView robotTime;
 
         public RoboViewHolder (View view){
             super(view);
@@ -81,6 +118,7 @@ public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHold
             deleteButton = view.findViewById(R.id.listitem_robot_delete);
             editButton = view.findViewById(R.id.listitem_robot_edit);
             card = view.findViewById(R.id.layout_robot_card);
+            robotTime = view.findViewById(R.id.robot_time);
         }
     }
 
