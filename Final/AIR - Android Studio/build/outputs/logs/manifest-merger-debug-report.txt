@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:1-34:12
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:1-34:12
 MERGED from [com.google.firebase:firebase-core:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-core-15.0.0.aar\a30fdb89836da744b7e27d18712aa231\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\202c70998fa22a5727c6c7cda71fa87d\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ceb7675c881692bbb82f79f06eb6b349\AndroidManifest.xml:17:1-31:12
@@ -38,41 +38,41 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\kkerz\.gradle\c
 MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\1dfe472319ffbc6cac5683fd3d2e9619\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1fd977b3f86b5390ed9de6d7279cadd3\AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\03f4b8f00ca880a3d66c9f37335807c0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:1-34:12
 	package
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:70-98
-		INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:70-98
+		INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:146-171
-		INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:146-171
+		INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:99-145
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:99-145
 	xmlns:android
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:172-195
-		INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:172-195
+		INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml
 	android:installLocation
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:2:196-236
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:2:196-236
 supports-screens
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:3:5-165
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:3:5-165
 	android:largeScreens
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:3:80-107
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:3:80-107
 	android:smallScreens
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:3:23-50
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:3:23-50
 	android:normalScreens
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:3:51-79
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:3:51-79
 	android:xlargeScreens
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:3:108-136
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:3:108-136
 	android:anyDensity
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:3:137-162
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:3:137-162
 application
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:4:5-27:19
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:4:5-27:19
 MERGED from [com.google.firebase:firebase-core:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-core-15.0.0.aar\a30fdb89836da744b7e27d18712aa231\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-core-15.0.0.aar\a30fdb89836da744b7e27d18712aa231\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:design:26.1.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\202c70998fa22a5727c6c7cda71fa87d\AndroidManifest.xml:25:5-29:19
@@ -130,90 +130,90 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\kkerz\.gradle\caches
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\03f4b8f00ca880a3d66c9f37335807c0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\03f4b8f00ca880a3d66c9f37335807c0\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:4:93-125
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:4:93-125
 	android:icon
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:4:60-92
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:4:60-92
 	android:banner
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:4:148-185
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:4:148-185
 	android:theme
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:4:18-59
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:4:18-59
 	android:isGame
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:4:126-147
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:4:126-147
 activity#com.heartbrers.air.MainActivity
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:6:9-81
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:6:9-81
 	android:theme
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:6:48-79
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:6:48-79
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:6:19-47
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:6:19-47
 activity#com.heartbrers.air.LoginActivity
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:7:9-13:20
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:7:9-13:20
 	android:theme
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:8:13-47
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:8:13-47
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:7:19-48
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:7:19-48
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:9:13-12:29
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:9:13-12:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:10:17-69
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:10:17-69
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:10:25-66
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:10:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:11:17-77
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:11:17-77
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:11:27-74
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:11:27-74
 activity#com.heartbrers.air.RegistrationActivity
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:14:9-90
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:14:9-90
 	android:theme
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:14:56-87
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:14:56-87
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:14:19-55
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:14:19-55
 activity#com.heartbrers.air.UnityPlayerActivity
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:15:9-22:20
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:15:9-22:20
 	android:screenOrientation
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:16:13-56
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:16:13-56
 	android:process
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:18:13-43
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:18:13-43
 	android:label
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:15:19-51
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:15:19-51
 	android:launchMode
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:17:13-44
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:17:13-44
 	android:configChanges
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:19:13-194
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:19:13-194
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:20:13-66
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:20:13-66
 meta-data#unityplayer.UnityActivity
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:21:13-88
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:21:13-88
 	android:value
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:21:65-85
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:21:65-85
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:21:24-64
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:21:24-64
 meta-data#unity.build-id
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:23:9-105
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:23:9-105
 	android:value
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:23:50-102
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:23:50-102
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:23:20-49
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:23:20-49
 meta-data#unity.splash-mode
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:24:9-73
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:24:9-73
 	android:value
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:24:53-70
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:24:53-70
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:24:20-52
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:24:20-52
 meta-data#unity.splash-enable
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:25:9-78
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:25:9-78
 	android:value
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:25:55-75
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:25:55-75
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:25:20-54
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:25:20-54
 meta-data#android.max_aspect
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:26:9-76
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:26:9-76
 	android:value
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:26:54-73
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:26:54-73
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:26:20-53
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:26:20-53
 uses-sdk
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:28:5-74
-INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:28:5-74
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:28:5-74
+INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:28:5-74
 MERGED from [com.google.firebase:firebase-core:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-core-15.0.0.aar\a30fdb89836da744b7e27d18712aa231\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-core-15.0.0.aar\a30fdb89836da744b7e27d18712aa231\AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:design:26.1.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\202c70998fa22a5727c6c7cda71fa87d\AndroidManifest.xml:21:5-23:62
@@ -282,21 +282,21 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\kkerz\.gradle\caches
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1fd977b3f86b5390ed9de6d7279cadd3\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\03f4b8f00ca880a3d66c9f37335807c0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\03f4b8f00ca880a3d66c9f37335807c0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:28:5-74
+INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:28:5-74
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.1.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\202c70998fa22a5727c6c7cda71fa87d\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:28:42-71
-		INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:28:42-71
+		INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:28:15-41
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:28:15-41
 uses-feature#0x00020000
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:29:5-54
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:29:5-54
 	android:glEsVersion
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:29:19-51
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:29:19-51
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:30:5-67
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:30:5-67
 MERGED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\40e0af883f3eea0ec8c00e136f13c2e4\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\40e0af883f3eea0ec8c00e136f13c2e4\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-15.0.0.aar\0af48125b41335d7a26698fb93aeeadf\AndroidManifest.xml:23:5-67
@@ -304,25 +304,25 @@ MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\kkerz\
 MERGED from [com.google.firebase:firebase-iid:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-iid-15.0.0.aar\3b3f4441b67f7f1be393f6ffcf956a3b\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:15.0.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\firebase-iid-15.0.0.aar\3b3f4441b67f7f1be393f6ffcf956a3b\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:30:22-64
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:30:22-64
 uses-feature#android.hardware.touchscreen
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:31:5-90
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:31:5-90
 	android:required
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:31:63-87
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:31:63-87
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:31:19-62
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:31:19-62
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:32:5-101
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:32:5-101
 	android:required
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:32:74-98
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:32:74-98
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:32:19-73
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:32:19-73
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:33:5-110
+ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:33:5-110
 	android:required
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:33:83-107
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:33:83-107
 	android:name
-		ADDED from C:\Users\kkerz\Desktop\unity-exported\RobotCreation2D\src\main\AndroidManifest.xml:33:19-82
+		ADDED from C:\Users\kkerz\Desktop\Technovation\Final\AIR - Android Studio\src\main\AndroidManifest.xml:33:19-82
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.1.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\202c70998fa22a5727c6c7cda71fa87d\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\kkerz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ceb7675c881692bbb82f79f06eb6b349\AndroidManifest.xml:26:9-28:38
