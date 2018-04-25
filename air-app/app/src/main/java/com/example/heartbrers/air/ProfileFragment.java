@@ -66,14 +66,18 @@ public class ProfileFragment extends Fragment {
                 data.setVisibility(View.VISIBLE);
                 progress.setVisibility(View.GONE);
 
-                new MaterialTapTargetPrompt.Builder(activity)
-                        .setTarget(view.findViewById(R.id.card_view_coins))
-                        .setPromptFocal(new RectanglePromptFocal())
-                        .setPromptBackground(new RectanglePromptBackground())
-                        .setPrimaryText("Robocoins")
-                        .setSecondaryText("You can spend your Robocoins on extra kits")
-                        .setBackgroundColour(getResources().getColor(R.color.colorPrimary))
-                        .show();
+                if(!PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean("tutorial_robocoins_shown", false)) {
+                    new MaterialTapTargetPrompt.Builder(activity)
+                            .setTarget(view.findViewById(R.id.card_view_coins))
+                            .setPromptFocal(new RectanglePromptFocal())
+                            .setPromptBackground(new RectanglePromptBackground())
+                            .setPrimaryText("Robocoins")
+                            .setSecondaryText("You can spend your Robocoins on extra kits")
+                            .setBackgroundColour(getResources().getColor(R.color.colorPrimary))
+                            .show();
+                    PreferenceManager.getDefaultSharedPreferences(getContext()).edit().putBoolean("tutorial_robocoins_shown", true).apply();
+                }
+
             }
 
 

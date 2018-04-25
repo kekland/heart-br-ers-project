@@ -1,6 +1,7 @@
 package com.example.heartbrers.air;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -19,6 +20,10 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
+import uk.co.samuelwall.materialtaptargetprompt.MaterialTapTargetPrompt;
+import uk.co.samuelwall.materialtaptargetprompt.extras.backgrounds.RectanglePromptBackground;
+import uk.co.samuelwall.materialtaptargetprompt.extras.focals.RectanglePromptFocal;
+
 /**
  * Created by nrgz on 11.04.2018.
  */
@@ -27,10 +32,12 @@ import java.util.List;
 public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHolder> {
     private List<RoboInfo> arrayList;
     private Context context;
+    private Activity activity;
 
-    public RobotAdapter(List<RoboInfo> arrayList, Context ctx){
+    public RobotAdapter(List<RoboInfo> arrayList, Context ctx, Activity activity){
         this.arrayList=arrayList;
         this.context = ctx;
+        this.activity = activity;
     }
 
 
@@ -74,6 +81,18 @@ public class RobotAdapter extends RecyclerView.Adapter<RobotAdapter.RoboViewHold
                 Sort();
             }
         });
+
+        if(!PreferenceManager.getDefaultSharedPreferences(activity).getBoolean("tutorial_robot_shown", false)) {
+            new MaterialTapTargetPrompt.Builder(activity)
+                    .setTarget(holder.card)
+                    .setPromptFocal(new RectanglePromptFocal())
+                    .setPromptBackground(new RectanglePromptBackground())
+                    .setPrimaryText("Your Robot")
+                    .setSecondaryText("Tap there to start constructing your dream robot")
+                    .setBackgroundColour(context.getResources().getColor(R.color.colorPrimary))
+                    .show();
+            PreferenceManager.getDefaultSharedPreferences(context).edit().putBoolean("tutorial_robot_shown", true).apply();
+        }
     }
 
     @Override

@@ -22,6 +22,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import uk.co.samuelwall.materialtaptargetprompt.MaterialTapTargetPrompt;
+import uk.co.samuelwall.materialtaptargetprompt.extras.backgrounds.RectanglePromptBackground;
+import uk.co.samuelwall.materialtaptargetprompt.extras.focals.RectanglePromptFocal;
+
 /**
  * Created by nrgz on 06.04.2018.
  */
@@ -53,7 +57,7 @@ public class RobotsFragment extends Fragment {
 
             }
         }
-        adapter = new RobotAdapter(info, getContext());
+        adapter = new RobotAdapter(info, getContext(), getActivity());
         adapter.Sort();
 
         recyclerView.setHasFixedSize(false);
@@ -61,6 +65,17 @@ public class RobotsFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
 
+        if(!PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean("tutorial_create_robot_shown", false)) {
+            new MaterialTapTargetPrompt.Builder(getActivity())
+                    .setTarget(view.findViewById(R.id.button_add))
+                    .setPromptFocal(new RectanglePromptFocal())
+                    .setPromptBackground(new RectanglePromptBackground())
+                    .setPrimaryText("Create your first robot")
+                    .setSecondaryText("Click this button to start building the future")
+                    .setBackgroundColour(getResources().getColor(R.color.colorPrimary))
+                    .show();
+            PreferenceManager.getDefaultSharedPreferences(getContext()).edit().putBoolean("tutorial_create_robot_shown", true).apply();
+        }
         Button btn = view.findViewById(R.id.button_add);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

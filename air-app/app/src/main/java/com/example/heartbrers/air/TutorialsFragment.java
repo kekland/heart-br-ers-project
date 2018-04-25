@@ -79,7 +79,7 @@ public class TutorialsFragment extends Fragment {
 
                 mprogressBar.setVisibility(View.GONE);
 
-                TutAdapter adapter = new TutAdapter(getContext(), info);
+                TutAdapter adapter = new TutAdapter(getContext(), info, getActivity());
                 recyclerView.setAdapter(adapter);
             }
 

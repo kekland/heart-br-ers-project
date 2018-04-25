@@ -1,7 +1,9 @@
 package com.example.heartbrers.air;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +16,10 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
+import uk.co.samuelwall.materialtaptargetprompt.MaterialTapTargetPrompt;
+import uk.co.samuelwall.materialtaptargetprompt.extras.backgrounds.RectanglePromptBackground;
+import uk.co.samuelwall.materialtaptargetprompt.extras.focals.RectanglePromptFocal;
+
 /**
  * Created by nrgz on 12.04.2018.
  */
@@ -22,10 +28,12 @@ import java.util.List;
 public class TutAdapter extends RecyclerView.Adapter<TutAdapter.TutViewHolder> {
     private List<TutorialsInfo> arrayList;
     private Context context;
+    private Activity activity;
 
-    public TutAdapter(Context ctx, List<TutorialsInfo> arrayList){
+    public TutAdapter(Context ctx, List<TutorialsInfo> arrayList, Activity activity){
         this.context = ctx;
         this.arrayList=arrayList;
+        this.activity = activity;
     }
 
 
@@ -37,7 +45,7 @@ public class TutAdapter extends RecyclerView.Adapter<TutAdapter.TutViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(TutViewHolder holder, int position) {
+    public void onBindViewHolder(final TutViewHolder holder, int position) {
         final TutorialsInfo tutorialsInfo = arrayList.get(position);
         holder.v_name.setText(tutorialsInfo.getVideoName());
         holder.tutorialsBackground.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +58,18 @@ public class TutAdapter extends RecyclerView.Adapter<TutAdapter.TutViewHolder> {
             }
         });
         Picasso.get().load(tutorialsInfo.getPlaceholderURL()).into(holder.video);
+
+        if(!PreferenceManager.getDefaultSharedPreferences(context).getBoolean("tutorial_tutorial_video_shown", false)) {
+            new MaterialTapTargetPrompt.Builder(activity)
+                    .setTarget(holder.tutorialsBackground)
+                    .setPromptFocal(new RectanglePromptFocal())
+                    .setPromptBackground(new RectanglePromptBackground())
+                    .setPrimaryText("Tutorial videos")
+                    .setSecondaryText("You can find all needed information about various topics here")
+                    .setBackgroundColour(context.getResources().getColor(R.color.colorPrimary))
+                    .show();
+            PreferenceManager.getDefaultSharedPreferences(context).edit().putBoolean("tutorial_tutorial_video_shown", true).apply();
+        }
     }
 
     @Override
